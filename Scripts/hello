@@ -1,3 +1,12 @@
 #!/usr/bin/env python
 
-print('huge success')
+"""Executable to run helloworld"""
+
+import sys
+from pathlib import Path
+
+rootdir = Path(__file__).parent.parent
+sys.path.append(str(rootdir))
+
+from helloworld.hello import main
+main()
